@@ -1,16 +1,15 @@
 /* Google Fonts ---> work-sans */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
 
-
 /* ------------------------
          Variables
 --------------------------- */
 :root {
   --color-primary: #131313;
   --color-secondary: #727272;
-  --color-tertiary: #FF900E;
+  --color-tertiary: #ff900e;
   --color-bright: #ffffff;
-  --color-soft: #FFF4E7;
+  --color-soft: #fff4e7;
 
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -24,12 +23,11 @@
   --bottom-margin: 130px;
 }
 
-
 /* ------------------------
 Universal and Common styles
 --------------------------- */
 * {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   margin: 0 auto;
 }
 
@@ -63,7 +61,6 @@ Universal and Common styles
 .btn-primary:hover {
   background-color: #eb8512;
 }
-
 
 /* -----------------------
           Header
@@ -110,4 +107,61 @@ Universal and Common styles
 
 .banner-img {
   padding: 50px 0;
+}
+
+/* -----------------------
+           Main
+-------------------------- */
+
+/* Our Features Section */
+.our-features {
+  display: flex;
+  align-items: center;
+  column-gap: 75px;
+  padding: 85px 64px 0 64px;
+  margin-bottom: var(--bottom-margin);
+}
+
+.our-features-imgs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.our-features-text .text-style-one {
+  font-weight: var(--font-weight-regular);
+  color: var(--color-secondary);
+}
+
+.our-features-text .text-style-two {
+  color: var(--color-tertiary);
+}
+
+/* Feature list Section */
+.feature-list {
+  display: flex;
+  align-items: center;
+  gap: 75px;
+  margin-bottom: var(--bottom-margin);
+}
+
+.feature-list-text .title {
+  border-left: 5px solid var(--color-tertiary);
+  padding-left: 20px;
+}
+
+.feature-list-item {
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 32px 48px 32px 32px;
+  margin-bottom: 20px;
+}
+
+.feature-list-item-title {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.feature-list-item .description {
+  margin: 10px 0 0 0;
 }
