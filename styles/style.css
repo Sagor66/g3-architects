@@ -113,8 +113,9 @@ Universal and Common styles
            Main
 -------------------------- */
 
-/* Our Features Section */
-.our-features {
+/* Our Features Section & Mega Projects Section */
+.our-features, 
+.mega-projects {
   display: flex;
   align-items: center;
   column-gap: 75px;
@@ -122,19 +123,29 @@ Universal and Common styles
   margin-bottom: var(--bottom-margin);
 }
 
-.our-features-imgs {
+.our-features-imgs, 
+.mega-projects-imgs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
-.our-features-text .text-style-one {
+.our-features-text .text-style-one, 
+.mega-projects-text .text-style-one {
   font-weight: var(--font-weight-regular);
   color: var(--color-secondary);
 }
 
-.our-features-text .text-style-two {
+.our-features-text .text-style-two,
+.mega-projects-text .text-style-two {
   color: var(--color-tertiary);
+}
+
+.mega-projects-img {
+  width: 332px;
+  height: 332px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 /* Feature list Section */
