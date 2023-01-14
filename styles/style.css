@@ -31,13 +31,46 @@ Universal and Common styles
 * {
   font-family: 'Work Sans', sans-serif;
   margin: 0 auto;
+}
+
+.fixed-width {
   max-width: 1440px;
+}
+
+.title {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+.description {
+  font-size: var(--font-size-regular);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-secondary);
+  margin: 24px 0 32px 0;
+}
+
+.btn-primary {
+  background-color: var(--color-tertiary);
+  color: var(--color-bright);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-semi-bold);
+  padding: 20px 24px;
+  border: 0;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #eb8512;
 }
 
 
 /* -----------------------
           Header
 -------------------------- */
+.header {
+  background-color: var(--color-soft);
+}
 
 /* Navigation bar */
 .nav {
@@ -45,13 +78,8 @@ Universal and Common styles
   justify-content: space-between;
   align-items: center;
   column-gap: 675px;
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-
-.nav-title {
-  font-size: var(--font-size-large);
-  font-weight: var(--font-weight-bold);
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .nav-items {
@@ -67,5 +95,19 @@ Universal and Common styles
 }
 
 .nav-item:hover {
-  color: var(--color-primary);
+  color: var(--color-tertiary);
+}
+
+/* Banner Section */
+.banner {
+  text-align: center;
+}
+
+.banner-title {
+  font-size: 64px;
+  font-weight: var(--font-weight-bold);
+}
+
+.banner-img {
+  padding: 50px 0;
 }
