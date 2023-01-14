@@ -146,6 +146,11 @@ Universal and Common styles
   height: 332px;
   object-fit: cover;
   border-radius: 8px;
+  transition: all 300ms ease-in-out;
+}
+
+.mega-projects-img:hover {
+  box-shadow: rgb(0 0 0 / 35%) 0px 4px 27px;
 }
 
 /* Feature list Section */
