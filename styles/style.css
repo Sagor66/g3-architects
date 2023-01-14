@@ -141,8 +141,10 @@ Universal and Common styles
 .feature-list {
   display: flex;
   align-items: center;
-  gap: 75px;
+  gap: 55px;
   margin-bottom: var(--bottom-margin);
+  padding-bottom: 48px;
+  position: relative;
 }
 
 .feature-list-text .title {
@@ -164,4 +166,31 @@ Universal and Common styles
 
 .feature-list-item .description {
   margin: 10px 0 0 0;
+}
+
+.feature-list-img {
+  padding-left: 100px;
+}
+
+.experience-btn {
+  width: 342px;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 640px;
+  background-color: var(--color-tertiary);
+  color: var(--color-bright);
+  border-radius: 8px;
+}
+
+.experience-btn-text {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-medium);
+  padding: 46px;
+  text-align: center;
+}
+
+.experience-btn-text span {
+  font-size: 65px;
+  font-weight: var(--font-weight-bold);
 }
