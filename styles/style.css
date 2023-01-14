@@ -1,0 +1,71 @@
+/* Google Fonts ---> work-sans */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+
+
+/* ------------------------
+         Variables
+--------------------------- */
+:root {
+  --color-primary: #131313;
+  --color-secondary: #727272;
+  --color-tertiary: #FF900E;
+  --color-bright: #ffffff;
+  --color-soft: #FFF4E7;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+
+  --font-size-regular: 16px;
+  --font-size-medium: 20px;
+  --font-size-large: 45px;
+
+  --bottom-margin: 130px;
+}
+
+
+/* ------------------------
+Universal and Common styles
+--------------------------- */
+* {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+
+/* -----------------------
+          Header
+-------------------------- */
+
+/* Navigation bar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 675px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.nav-title {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+}
+
+.nav-items {
+  display: flex;
+  column-gap: 48px;
+}
+
+.nav-item {
+  font-size: 18px;
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+.nav-item:hover {
+  color: var(--color-primary);
+}
