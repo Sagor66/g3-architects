@@ -293,6 +293,7 @@ Universal and Common styles
     flex-direction: column;
     column-gap: 0;
     row-gap: 20px;
+    padding-bottom: 50px;
   }
   .nav-items {
     flex-direction: column;
