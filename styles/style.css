@@ -62,6 +62,10 @@ Universal and Common styles
   background-color: #eb8512;
 }
 
+.hidden {
+  display: none;
+}
+
 /* -----------------------
           Header
 -------------------------- */
@@ -277,4 +281,119 @@ Universal and Common styles
 
 .footer p {
   padding: 40px 0;
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+/* -----------------------
+        Responsive
+-------------------------- */
+
+/* Responsive for Mobile devices */
+@media only screen and (max-width: 576px) {
+  .hidden {
+    display: block;
+  }
+
+  /* ----- Nav ----- */
+  .nav {
+    column-gap: 0;
+  }
+  .nav-items {
+    display: none;
+  }
+  .nav i {
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* ----- Banner ----- */
+  .banner-img img {
+    width: 100%;
+  }
+
+  /* ----- Our Features ----- */
+  .our-features {
+    flex-direction: column-reverse;
+    padding: 0;
+    margin-bottom: 70px;
+  }
+  .our-features-imgs {
+    grid-template-columns: repeat(1, 1fr);
+    border-bottom: 10px double var(--color-tertiary);
+    padding-bottom: 70px;
+  }
+  .our-features-text, .mega-projects-text {
+    text-align: center;
+    padding: 24px;
+  }
+
+  /* ----- Feature List ----- */
+  .feature-list {
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+  }
+  .feature-list-text {
+    padding: 24px;
+  }
+  .feature-list-img {
+    padding: 0 48px;
+  }
+  .feature-list-img img {
+    width: 100%;
+  }
+  .experience-btn {
+    width: 250px;
+    height: 120px;
+    left: 80px;
+    top: 375px;
+  }
+  .experience-btn-text {
+    padding: 23px;
+  }
+  .experience-btn-text span {
+    font-size: var(--font-size-large);
+  }
+
+  /* ----- Mega Projects ----- */
+  .mega-projects {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .mega-projects-imgs {
+    grid-template-columns: repeat(1, 1fr);
+    border-top: 10px double var(--color-secondary);
+    padding-top: 100px;
+  }
+
+  /* ----- Facts ----- */
+  .fact {
+    text-align: center;
+    padding: 0 24px;
+  }
+  .fact-items {
+    flex-direction: column;
+  }
+
+  /* ----- Sponsors ----- */
+  .sponsors-images {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .sponsor-img {
+    max-width: 100px;
+  }
+
+  /* ----- Footer ----- */
+  .footer {
+    max-width: 300px;
+  }
+  .footer p {
+    font-size: 10px;
+    padding: 20px;
+  }
 }
