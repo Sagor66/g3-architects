@@ -63,7 +63,7 @@ Universal and Common styles
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /* -----------------------
