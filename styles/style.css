@@ -62,9 +62,6 @@ Universal and Common styles
   background-color: #eb8512;
 }
 
-.hidden {
-  display: none !important;
-}
 
 /* -----------------------
           Header
@@ -284,27 +281,28 @@ Universal and Common styles
 }
 
 
-.hidden {
-  display: none;
-}
-
-
 /* -----------------------
         Responsive
 -------------------------- */
 
 /* Responsive for Mobile devices */
 @media only screen and (max-width: 576px) {
-  .hidden {
-    display: block;
-  }
 
   /* ----- Nav ----- */
   .nav {
+    flex-direction: column;
     column-gap: 0;
+    row-gap: 20px;
   }
   .nav-items {
-    display: none;
+    flex-direction: column;
+    row-gap: 10px;
+    border-left: 5px solid var(--color-tertiary);
+    border-right: 5px solid var(--color-tertiary);
+    padding: 0 64px;
+  }
+  .nav-items a {
+    border-bottom: 1px solid var(--color-tertiary);
   }
   .nav i {
     font-size: var(--font-size-medium);
